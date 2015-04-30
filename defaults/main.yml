@@ -3,6 +3,9 @@
 # Install set of standard packages
 php5_packages: [ 'php5-curl', 'php5-gd', 'php5-mcrypt' ]
 
+# Packages for FPM SAPI support
+php5_fpm_packages: [ 'php5-fpm', 'php5-cli' ]
+
 # This variable determines what options will be used in php.ini for options
 # that can be useful either in production or development environment
 php5_production: True

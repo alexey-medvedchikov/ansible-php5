@@ -7,7 +7,7 @@
 
 - name: Make sure PHP5-FPM support is installed
   apt: pkg={{ item }} state=latest install_recommends=no
-  with_items: [ 'php5-fpm', 'php5-cli' ]
+  with_items: php5_fpm_packages is defined and php5_fpm_packages
 
 - name: Install PHP5 packages
   apt: pkg={{ item }} state=latest install_recommends=no
